@@ -1,0 +1,28 @@
+{
+  "name": "wireframe-example",
+  "version": "0.0.0",
+  "author": {
+    "name": "Michał Gołębiowski",
+    "email": "m.goleb@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "6.1.2",
+    "autoprefixer-cli": "1.0.0",
+    "beepbeep": "1.2.0",
+    "chokidar-cli": "1.2.0",
+    "node-sass": "3.4.2",
+    "normalize.css": "3.0.3"
+  },
+  "scripts": {
+    "beep": "./scripts/beep.js",
+    "sass": "node-sass --source-map true scss/styles.scss css/styles-unprefixed.css",
+    "autoprefixer": "autoprefixer-cli -m -b \"`node -p \\\"require('./postcss-config.json').autoprefixer.browsers.join(', ')\\\"`\" css/styles-unprefixed.css -o css/styles.css",
+    "build": "npm run sass && npm run autoprefixer",
+    "dev": "npm run build && chokidar 'scss/*.scss' -c 'npm run build || npm run beep'"
+  },
+  "engines": {
+    "node": "^4.2.2"
+  }
+}
