@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Design test</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Design test</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+<header class="main-header">
+    <div class="logo">Logo</div>
+    <h1>Company Name</h1>
+
+    <div class="social-buttons social-buttons--header">
+        <a class="social facebook" href="https://facebook.com" target="_blank">Facebook</a>
+        <a class="social twitter" href="https://twitter.com" target="_blank">Twitter</a>
+        <a class="social google-plus" href="https://plus.google.com" target="_blank">Google+</a>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <label for="menu-toggle-input" class="menu-toggle">menu</label>
+    <input type="checkbox" id="menu-toggle-input" class="menu-toggle-input">
+    <ul class="main-nav-list">
+        <li><a class="text-link" href="#home">Home</a></li>
+        <li><a class="text-link" href="#ebooks">eBooks</a></li>
+        <li><a class="text-link" href="#magazines">Magazines</a></li>
+        <li><a class="text-link" href="#movies">Movies</a></li>
+        <li><a class="text-link" href="#help">Help</a></li>
+        <li><a class="text-link" href="#login">Login</a></li>
+    </ul>
+</nav>
+
+<div class="articles">
+    <main class="main-article">
+        <article>
+            <h2 class="article__title">Lorem Ipsum Dolor Sit</h2>
+
+            <h3 class="article__subtitle">
+                Posted on
+                <time datetime="2015-05-15">15 May 2015</time>
+                by
+                <a class="text-link" href="#author">Author</a>
+            </h3>
+
+            <img class="article__image"
+                 src="http://placehold.it/400x300"
+                 srcset="http://placehold.it/400x300 400w, http://placehold.it/800x600 800w"
+                 alt="Lorem ipsum image">
+
+            <div class="article__content">
+                <aside class="more-links">
+                    <h4 class="more-links__header">More…</h4>
+                    <ul>
+                        <li><a class="text-link" href="#link-1">Link #1</a></li>
+                        <li><a class="text-link" href="#another-link">Another link</a></li>
+                        <li><a class="text-link" href="#third-link">Third link</a></li>
+                    </ul>
+                </aside>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam fermentum. Integer
+                    fringilla. Integer fringilla. Pellentesque ac turpis. Sed elementum, felis quis
+                    porttitor sollicitudin, augue nulla sodales sapien, amet posuere quam purus at lacus.
+                    Nam id neque. Morbi pulvinar nulla sit amet nisl. Etiam pharetra lacus sed velit
+                    imperdiet bibendum. Sed quis elit. In hac habitasse platea dictumst. Maecenas justo.
+                    Donec interdum vestibulum libero. Nam laoreet dui sed magna. Nam consectetuer mollis
+                    dolor. Aenean ligula. Aliquam sed erat. Donec interdum vestibulum libero. Mauris et
+                    dolor.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <aside class="other-articles">
+        <a href="#another-article-1"
+           class="another-article">
+            <h3 class="another-article__title">A guide to snoopsetting</h3>
+            <img class="article__image"
+                 src="http://placehold.it/50x50"
+                 srcset="http://placehold.it/100x100 100w, http://placehold.it/50x50 50w"
+                 alt="Lorem ipsum image">
+        </a>
+
+        <a href="#another-article-2"
+           class="another-article">
+            <h3 class="another-article__title">Welcome to the Surveillance State</h3>
+            <img class="article__image"
+                 src="http://placehold.it/50x50"
+                 srcset="http://placehold.it/100x100 100w, http://placehold.it/50x50 50w"
+                 alt="Lorem ipsum image">
+        </a>
+    </aside>
+</div>
+
+<footer>
+    <div class="social-buttons social-buttons--footer">
+        <a class="social facebook" href="https://facebook.com" target="_blank">Facebook</a>
+        <a class="social twitter" href="https://twitter.com" target="_blank">Twitter</a>
+        <a class="social google-plus" href="https://plus.google.com" target="_blank">Google+</a>
+    </div>
+    <small>
+        Social icons made by
+        <a href="http://www.flaticon.com/authors/bogdan-rosu">Bogdan Rosu</a>
+        from
+        <a href="http://www.flaticon.com">www.flaticon.com</a>.
+    </small>
+</footer>
 </body>
 </html>
